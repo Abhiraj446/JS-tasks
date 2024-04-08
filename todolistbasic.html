@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        width:70%;
+        /* height:auto; */
+        /* border: 2px solid black; */
+        background-color: bisque;
+        border-radius: 5px;
+        margin:auto;
+        /* height:100vh; */
+        height: auto;
+        padding: 20px;
+        min-height: 100vh;
+    }
+    #title{
+        width:90%;
+        height:50px;
+        font-size: larger;
+        padding-left: 5px;
+        outline:none;
+        border-radius: 5px;
+    }
+    #description{
+        width:90%;
+        height: 100px;
+        font-size: large;
+        outline: none;
+        border-radius: 5px;
+    }
+    .taskadd{
+        width:90%;
+        height:40px;
+        font-size: large;
+        background-color: silver;
+        border-radius: 5px;
+    }
+    .taskadd:hover{
+        background-color:grey;
+        color:white;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .task{
+        width:90%;
+        height:auto;
+        margin: 15px;
+        background-color:antiquewhite;
+        display: flex;
+        justify-content: space-around;
+    }
+    .Delete{
+        height:30px;
+        width:30px;
+        border-radius: 15px;
+        margin-top: 40px;
+        font-size: 30px;
+        background-color: lightcoral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Delete:hover{
+        background-color: coral;
+    }
+    .classtitle{
+        color:brown;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    .para{
+        font-size: 20px;
+    }
+</style>
+<body>
+    
+    <center>
+        <div class="container">
+    
+           <h1><u>TO DO LIST</u></h1>
+
+            <form>
+                <input type="text" id="title" placeholder="Title Task" required>
+
+                <br><br>
+
+                <textarea name="" id="description"  placeholder="Write Description here"></textarea required >
+
+                <br><br>
+                    
+                <button type="submit" class="taskadd">Add Task</button>
+
+                <br><br>
+            </form>
+
+            <!-- <div class="task">
+                <div>
+                    <h2 class="classtitle">Title</h2>
+                    <p class="para">description</p>
+                </div>
+                <button class="del">-</button>
+            </div> -->
+
+            <br>
+
+        </div>
+    </center>
+
+
+    <script src="todolistbasic.js"></script>
+
+</body>
+</html>

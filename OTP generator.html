@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP generator</title>
+</head>
+<style>
+    button{
+        background-color:black;
+        color:white;
+        border-radius: 20px;
+        height:50px;
+        width:100px;
+        font-size: larger;
+        border: none;
+    }
+    button:hover{
+        background-color: grey;
+    }
+</style>
+<body>
+
+    <h1>OTP Generator</h1>
+    <br>
+    <p style="font-size: x-large;">Tap here to get OTP</p>
+    <button onclick="Tap()" id="btn">Get OTP</button>
+    <br>
+    <p id="result" style="font-size: large;" ></p>
+
+
+    <script>
+        function Tap(){
+            let a=Math.random()
+            let b=a*10000;
+            let otp=Math.floor(b)
+            
+            // let name=prompt("Mention your name")
+            // alert(name+" "+"Your otp is"+" "+otp)
+            document.getElementById("result").innerHTML=name+" "+"your otp is here"+" "+otp+".";
+            document.getElementById("result").style.color="red";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style> 
+    input{
+        width:320px;
+        height:40px;
+        font-size: 15px;
+        border-radius: 10px;
+        padding-left: 10px;
+        outline-color: lightskyblue;
+    }
+    .container{
+        border:1px solid black;
+        width: 800px;
+        background-color: black;
+        color:grey;
+    }
+    h4{
+        font-size: 1.8rem;
+    }
+    .span:hover{
+        color:orange;
+    }
+    .butn:hover{
+        background-color: green;
+    }
+</style>
+<body>
+<form id="myform">
+    <div class="container mt-5">
+
+        <div class="row mt-5">
+            <div class="col-md-3"></div>
+            <div class="col-md-8"><h1 style="font-size: 2.5rem;color:aqua"><u>FORM VALIDATION</u></h1></div>
+            <div class="col"></div>
+        </div>
+
+        <br>
+        <div class="row mt-5">
+            <div class="col-md-2"></div>
+            <div class="col-md-4"><h4>First Name:</h4></div>
+            <div class="col-md-4">
+                <input type="text" name="" id="fname" placeholder="xyz.." required>
+                <div class="row">
+                    <div class="col"><p id="fnametxt" style="color:red"></p></div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        
+
+        <div class="row mt-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-4"><h4>Last Name:</h4></div>
+            <div class="col-md-3">
+                <input type="text" name="" id="lname" placeholder="xyz.." required>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-4"><h4>Mobile No.:</h4></div>
+            <div class="col-md-4">
+                <input type="number" name="" id="mnum" placeholder="+91 7546***" required>
+                <div class="row">
+                    <div class="col"><p id="mnumtxt" style="color:red"></p></div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-4"><h4>Email:</h4></div>
+            <div class="col-md-4">
+                <input type="text" name="" id="email" placeholder="abc@gmail.com" required>
+                <div class="row">
+                    <div class="col"><p id="emailtxt" style="color:red"></p></div>  
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-4"><h4>Password:</h4></div>
+            <div class="col-md-6">
+                <input type="password" name="" id="pass" placeholder="5@Ss^*****">
+                <div class="row">
+                    <div class="col"><p id="passtxt" style="color:red"></p></div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-4"><h4>Confirm:</h4></div>
+            <div class="col-md-4 mt-2">
+                <input type="password" name="" id="cpass">
+                <div class="row">
+                    <div class="col"><p id="cpasstxt" style="color:red"></p></div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <br>
+        <div class="row mt-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-10"><div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width:30px;height:30px">
+                &nbsp;&nbsp;&nbsp;
+                <label class="form-check-label" for="flexCheckDefault">
+                 <p style="font-size: 20px;">I agree with all <span style="color:orangered" class="span"><u >terms and conditions</u></span></p>
+                </label>
+            </div>
+        </div>
+
+        <br>
+        <div class="row mt-5 mb-4">
+            <div class="col-md-6"></div>
+            <div class="col-md-2">
+                <input type="Submit" value="Submit" style="height: 50px; width:100px;border-radius: 20px;background-color: grey;border: none">
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+    </div>
+</form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="formvalidation.js"></script>
+
+</body>
+</html> 

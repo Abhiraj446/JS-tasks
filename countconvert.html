@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changes Input</title>
+</head>
+<style>
+    button{
+        height:50px;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: none;
+        background-color: brown;
+        color:white;
+    }
+    button:hover{
+        background-color: lightcoral;
+        color:black;
+    }
+    .container{
+        border: 1px solid black;
+        width:500px;
+        height:300px;
+        margin-top: 100px;
+    }
+</style>
+<body>
+    
+    <center>
+    <div class="container">
+        <h2><u>Changes in Input</u></h2>
+    <input type="text" name="" id="text" style="height:30px;width:400px;font-size: 20px;margin-top: 20px;background-color: aliceblue;border-radius: 10px;padding-left: 10px
+    ;" required>
+
+    <br><br>
+    <button onclick="upper()">Upper Case</button>
+    <button onclick="lower()">Lower Case</button>
+    <button onclick="document.getElementById('text').value=''">Clear</button>
+    <button onclick="minspace()">min space</button>
+    <br><br>
+    <button onclick="words()">No. of words</button>
+    <button onclick="letter()">No. of letter</button>
+    <button onclick="space()">Remove space</button>
+
+    <h2 id="show" style="color:black"></h2>
+</div>
+</center>
+
+
+    <script>    
+
+        let txt=document.getElementById("text");
+        let show=document.getElementById("show");
+
+        function upper(){
+            txt.value=txt.value.toUpperCase();
+        }
+
+        function lower(){
+            txt.value=txt.value.toLowerCase();
+        }
+
+        // function words(){
+            // show.innerHTML=txt.value.;
+        // }
+
+        function letter(){
+            txt.value=txt.value.split(" ").join("");
+            show.innerHTML=txt.value.length;
+            document.getElementById("show").innerHTML="No. of letters are"+" "+text.value.length
+        }
+
+        function space(){
+            txt.value=txt.value.split(" ").join("");
+        }
+
+        function minspace(){
+            txt.value=txt.value.replace(/\s+/g, ' ').trim();
+        }
+        
+            
+        
+
+
+//   const inputField = document.getElementById("myInput");
+
+//   inputField.addEventListener("keyup", function(event) {
+//     event.preventDefault();
+//     inputField.value = inputField.value.toUpperCase();
+//   });
+    </script>
+
+</body>
+</html>
