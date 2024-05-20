@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="captcha.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>TEXT GENERATOR</h1>
+
+        <input type="text" name="" id="numOfText" placeholder="Type a number">
+
+        <button onclick="generate()">Generate</button>
+
+    </div>
+
+    <script>
+        let input=document.getElementById("numOfText")
+        let container=document.querySelector(".container")
+
+        function generate(words){
+            let words = Number(input.value);
+            console.log(words)
+
+            let p=document.createElement("p");
+            p.innerText=text
+            p.setAttribute("class","txt")
+            container.append(p)
+
+            let text=""
+            let letter="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            for(let i=0;i<words;i++){
+                text+=letter[i];
+            }
+            return text;
+            Math.random(letter)
+        }
+
+        // function generateText(words){
+        //     let text=""
+        //     let letter="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        //     for(let i=0;i<words;i++){
+        //         text+=letter[i];
+        //     }
+        //     return text;
+        // }
+        // console.log(generateText(5))
+
+        // let a=(Math.random()*26).toFixed(0)
+        // console.log(a)
+
+    </script>
+
+</body>
+</html>
